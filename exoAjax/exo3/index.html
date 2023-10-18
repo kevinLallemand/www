@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemple d'Ajax</title>
+</head>
+<body>
+    <div id="response"></div>
+
+    <div id="response"></div>
+
+    <script>
+        // Créez une instance de l'objet XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+
+        // Configurez la requête
+        xhr.open('GET', 'string.php', true);
+
+        // Définissez la fonction de rappel pour gérer la réponse
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = xhr.responseText;
+
+                // Affichez la réponse dans le DOM
+                document.getElementById('response').textContent = "Réponse du serveur : " + response;
+
+                // Affichez la réponse dans la console
+                console.log("Réponse dans la console : " + response);
+            }
+        };
+
+
+        // Créez une instance de l'objet XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+
+        // Configurez la requête
+        xhr.open('GET', 'array.php', true);
+
+        // Définissez la fonction de rappel pour gérer la réponse
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+
+                // Affichez la réponse dans le DOM
+                var responseDiv = document.getElementById('response');
+                responseDiv.innerHTML = `
+                    Données : ${response.data}<br>
+                    Type : ${response.type}<br>
+                    Date : ${response.date}
+                `;
+            }
+        };
+        // Envoyez la requête
+        xhr.send();
+    </script>
+    
+        <script>
+            // Créez une instance de l'objet XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+    
+            // Configurez la requête
+            xhr.open('GET', 'string.php', true);
+    
+            // Définissez la fonction de rappel pour gérer la réponse
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var response = xhr.responseText;
+    
+                    // Affichez la réponse dans le DOM
+                    document.getElementById('response').textContent = "Réponse du serveur : " + response;
+    
+                    // Affichez la réponse dans la console
+                    console.log("Réponse dans la console : " + response);
+                }
+            };
+    
+            // Envoyez la requête
+            xhr.send();
+        </script>
+</body>
+</html>

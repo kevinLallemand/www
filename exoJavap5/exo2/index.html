@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Définition de l'objet Car avec les propriétés
+const car = {
+  make: "Toyota",
+  model: "Camry",
+  color: "Blue",
+  
+  // Définition de la méthode showCar
+  showCar: function() {
+    const carDescription = `Une belle ${this.make} ${this.model}, de couleur ${this.color}.`;
+    const paragraph = document.createElement("p");
+    paragraph.textContent = carDescription;
+    document.body.appendChild(paragraph);
+  }
+};
+
+// Appel de la méthode showCar pour afficher les détails de la voiture dans un paragraphe
+car.showCar();
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulaire</h1>
+    <form id="monFormulaire">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" value="John Doe"><br><br>
+        
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" value="johndoe@example.com"><br><br>
+        
+        <label for="message">Message :</label><br>
+        <textarea id="message" name="message" rows="4" cols="50">Ceci est un message par défaut.</textarea><br><br>
+        
+        <input type="submit" value="Envoyer">
+        <input type="button" value="RAZ" id="razButton">
+    </form>
+
+    <script>
+        // Sélectionnez le formulaire et le bouton de réinitialisation par leurs IDs
+        const formulaire = document.getElementById("monFormulaire");
+        const razButton = document.getElementById("razButton");
+
+        // Écoutez l'événement "click" sur le bouton de réinitialisation
+        razButton.addEventListener("click", () => {
+            // Réinitialisez les valeurs des champs du formulaire à vide
+            formulaire.reset();
+        });
+    </script>
+</body>
+</html>

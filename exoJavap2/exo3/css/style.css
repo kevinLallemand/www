@@ -1,0 +1,20 @@
+.image-container {
+    display: inline-block;
+    margin: 10px;
+}
+
+.image-container:hover img {
+    display: none;
+}
+
+.image-container:hover .hover-image {
+    display: inline-block;
+}
+
+img {
+    max-width: 100px;
+}
+
+.hover-image {
+    display: none;
+}

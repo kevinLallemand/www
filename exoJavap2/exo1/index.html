@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="/exo1/image/650f6c57f2ea3_IMG-20230921-WA0000.jpg" alt="Image 1">
+    </div>
+<script>
+    // Sélectionnez l'élément image
+     const image = document.getElementById("image");
+
+    // Définissez la source de l'image à afficher au survol
+     const imageSrcOnHover = "/exo1/image/6523ee4245085_imgpizza08.JPG";
+
+    // Écoutez l'événement "mouseover" sur l'élément image
+    image.addEventListener("mouseover", () => {
+    // Changez la source de l'image au survol
+    image.src = imageSrcOnHover;
+     });
+
+    // Écoutez l'événement "mouseout" sur l'élément image pour restaurer l'image d'origine
+    image.addEventListener("mouseout", () => {
+    // Restaurez la source de l'image à l'originale
+    image.src = "/exo1/image/650f6c57f2ea3_IMG-20230921-WA0000.jpg";
+    });
+
+    </script>
+</body>
+</html>

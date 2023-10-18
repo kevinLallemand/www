@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ajouter des éléments dans le DOM</title>
+
+  
+  </head>
+  <body>
+    <button>Ajouter un élément</button>
+    <ul>
+    </ul>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script> 
+        type="text/javascript">
+          $(document).ready(function(){
+          $("button").click(function(){
+            $("ul").append("<li>lorem ipsum</li>"); 
+          });
+        });
+        </script>
+  </body> 
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: #000; /* Set the initial color of paragraphs to black */
+        }
+    </style>
+</head>
+<body>
+    <button id="button">Changer la couleur des paragraphes</button>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+    <p>lorem ipsum</p>
+
+    <!-- Include jQuery and jQuery UI libraries -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var state = true;
+            $("#button").on("click", function() {
+                $("p").each(function() {
+                    if (state) {
+                        $(this).animate({
+                            color: "#f39"
+                        }, 500); // Change the color to white over 500 milliseconds
+                    } else {
+                        $(this).animate({
+                            color: "#f30"
+                        }, 500); // Change the color back to black over 500 milliseconds
+                    }
+                });
+                state = !state;
+            });
+        });
+    </script>
+</body>
+</html>

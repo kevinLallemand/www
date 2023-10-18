@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// Création de l'objet Personnage
+        const personnage = {
+          name: "John Doe",
+          age: 30,
+          rang: "Chevalier",
+          crie: "Pour la gloire!",
+          
+          // Méthode pour crier
+          crieDansLaConsole: function() {
+            console.log(this.crie);
+          }
+        };
+        
+        // Appel de la méthode pour que le personnage crie dans la console
+        personnage.crieDansLaConsole();</script>
+</body>
+</html>

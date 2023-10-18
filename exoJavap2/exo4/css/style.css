@@ -1,0 +1,8 @@
+#image {
+    max-width: 100%;
+    border: none; /* Supprimez la bordure par défaut de l'image */
+}
+
+.bordered {
+    border: 3px solid red;
+}

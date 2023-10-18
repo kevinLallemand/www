@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const date = new Date();
+        console.log(date.toLocaleDateString() ); 
+     </script>
+    <script>
+       const event = new Date(Date.UTC(2023, 9, 12, 3, 0, 0));
+       const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+       console.log(event.toLocaleDateString('fr-FR',options) ); 
+    </script>
+</body>
+</html>

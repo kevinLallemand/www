@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="paragraphe">Ceci est un paragraphe intégré. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse rem, minima repellat atque inventore aperiam ex nostrum veritatis placeat sed laudantium? Natus distinctio tempore ratione incidunt inventore fuga neque provident.
+    Quia possimus cumque laboriosam error excepturi voluptatibus repellendus eaque minima perspiciatis facilis. Est vel quisquam odio quam, eaque blanditiis dolorum libero quos natus consectetur ex! Sed nisi nostrum expedita aut.
+    Consequuntur repellat sapiente dolores, ratione sit debitis praesentium facere perferendis veritatis voluptates quasi. Voluptates vero, quibusdam accusamus unde a praesentium dicta assumenda ducimus nulla expedita autem dolores ipsa laboriosam corporis.
+    Vitae ea ipsam aperiam cumque blanditiis quis aspernatur libero, eos necessitatibus rem nesciunt quaerat voluptatibus? Distinctio architecto eos, assumenda neque sint animi? Exercitationem, incidunt quos. Natus expedita ipsa accusantium eveniet?
+    Repudiandae voluptates quod deserunt eligendi dolorum! Quaerat laborum sapiente incidunt ut alias. Nesciunt laboriosam quos quibusdam quasi, ullam fuga, perferendis nobis sint doloremque deleniti ea voluptatibus, vel aperiam consectetur nisi.
+    Exercitationem itaque facilis nemo quas optio saepe quis ea, repellendus quaerat! Voluptatum molestiae numquam debitis, neque optio unde amet quidem accusamus quam totam, atque, fuga dignissimos iusto. Labore, aliquam voluptate.
+    Consectetur repellat numquam blanditiis consequuntur quasi asperiores a sapiente quibusdam aliquid, odio voluptas atque voluptates debitis molestias suscipit vitae voluptatibus minus quis porro deserunt quo nostrum non eveniet necessitatibus? Vel!
+    Explicabo commodi mollitia dolorum iusto. Consequuntur aliquid libero, quisquam quasi error vero? Illum odit obcaecati temporibus nemo perspiciatis neque amet, doloremque officiis, sit debitis error quibusdam nostrum iusto saepe cupiditate?
+    Dolore quidem delectus beatae blanditiis repellat, enim architecto eius et nostrum necessitatibus consectetur ad laudantium mollitia, nam error. Quidem repudiandae non eos reprehenderit quae quam error maiores quia eum iste.
+    </p>
+    <button id="showButton">SHOW</button>
+    <button id="hideButton">HIDE</button>
+    <button id="changeColorButton">Change Color</button>
+
+    <script>
+          // Sélectionnez l'élément paragraphe et les boutons par leurs IDs
+        const paragraphe = document.getElementById("paragraphe");
+        const showButton = document.getElementById("showButton");
+        const hideButton = document.getElementById("hideButton");
+        const changeColorButton = document.getElementById("changeColorButton");
+
+        // Ajoutez un écouteur d'événements "click" au bouton SHOW
+        showButton.addEventListener("click", () => {
+            // Affichez le paragraphe en le rendant visible
+            paragraphe.style.display = "block";
+        });
+
+        // Ajoutez un écouteur d'événements "click" au bouton HIDE
+        hideButton.addEventListener("click", () => {
+            // Masquez le paragraphe en le rendant invisible
+            paragraphe.style.display = "none";
+        });
+
+        // Ajoutez un écouteur d'événements "click" au bouton Change Color
+        changeColorButton.addEventListener("click", () => {
+            // Modifiez la couleur du texte en utilisant la propriété CSS color
+            const colors = ["red", "blue", "green", "orange"];
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            paragraphe.style.color = randomColor;
+        });
+    </script>
+</body>
+</html>
