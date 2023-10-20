@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Inscription</h1>
+    <!-- Formulaire d'inscription -->
+    <form id="inscription-form">
+        <!-- Champ pour le nom d'utilisateur -->
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <!-- Champ pour l'adresse e-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <!-- Champ pour le mot de passe -->
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <!-- Bouton pour soumettre le formulaire -->
+        <button type="submit">S'inscrire</button>
+    </form>
+    <!-- Affichage des messages -->
+    <div id="message"></div>
+    <!-- Script JavaScript pour gérer la soumission du formulaire -->
+    <script src="inscription.js"></script>
+</body>
+</html>
