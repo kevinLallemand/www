@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+</head>
+<body>
+    <h1>Page d'accueil</h1>
+    <button id="btnConnection">connection</button>
+    <button id="btnInscription">Inscription</button>
+    <script>
+        // Récupération des boutons par leur ID
+        var btnConnection = document.getElementById('btnConnection');
+        var btnInscription = document.getElementById('btnInscription');
+
+        // Gestionnaire d'événement pour le bouton "Connexion"
+        btnConnection.addEventListener('click', function() {
+            // Redirection vers connection.html
+            window.location.href = 'connection.html';
+        });
+
+        // Gestionnaire d'événement pour le bouton "Inscription"
+        btnInscription.addEventListener('click', function() {
+            // Redirection vers inscription.html
+            window.location.href = 'inscription.php';
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
